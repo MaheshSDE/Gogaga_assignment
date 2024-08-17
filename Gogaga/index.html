@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbg fixed-top">
+        <a class="navbar-brand" href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS81Qum24otF5wmcKoDFQOAxfCUPzufXafIKg&s" alt="logo image" height="75" width="80" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+            <i class="fas fa-user pl-2 profile-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active  m-1">
+                    <a class="nav-link" href="#" id="item1">Packages <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  m-1 links">
+                    <a class="nav-link" href="#" id="item2">Tours</a>
+                </li>
+                <li class="nav-item m-1 links">
+                    <a class="nav-link " href="#" id="item3">Help</a>
+                </li>
+                <li class="nav-item d-flex justify-content-start align-items-center links m-1">
+                    <a class="nav-link pr-2" href="#" id="item4">Membership</a>
+                    <i class="fas fa-gem"></i>
+                </li>
+                <li class="nav-item d-flex justify-content-start align-items-center links m-1">
+                    <a class="nav-link pr-2" href="#" id="item5">Gift cards</a>
+                    <i class="fas fa-gift"></i>
+                </li>
+                <li class="nav-item profile d-flex justify-content-start align-items-center m-2">
+                    <div class="profile-container">
+                        <i class="fas fa-bars pr-1"></i>
+                        <i class="fas fa-user pl-2"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bgContainer d-flex justify-content-center align-items-center ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="heading">Discover Your Next Adventure</h1>
+                    <p class="description"> Unlock your path to adventure, start your journey of discovery - where every destination awaits your exploration</p>
+                </div>
+                <div class="col-12">
+                    <div class="card-container p-3">
+                        <div class="row">
+                            <div class="col-3 col-md-1">
+                                <div class="packagesContainer">
+                                    <p class="packages text-center pt-3">Packages</p>
+                                </div>
+                            </div>
+                            <div class="col-3 col-md-1">
+                                <div class="toursContainer">
+                                    <p class="tours pt-3">Tours</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pt-3 mt-4 mb-2">
+                            <div class="col-12 col-lg-2">
+                                <div class="inputContainer d-flex flex-column justify-content-start align-items-start pl-2 pr-2 pr-2 mb-3 shadow">
+                                    <label>Destination</label>
+                                    <input type='text' class="input" placeholder="Enter the City" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="inputContainer mb-3 dateContainer shadow">
+                                    <div class="d-flex flex-column justify-content-start align-items-start  p-2">
+                                        <label>Check In</label>
+                                        <input type='date' class="input" placeholder="Enter the City" />
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-start align-items-start pt-2">
+                                        <i class="fas fa-moon pb-2"></i>
+                                        <p>1 Night</p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-start align-items-start p-2">
+                                        <label>Check Out</label>
+                                        <input type='date' class="input" placeholder="Enter the City" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-2">
+                                <div class="inputContainer d-flex flex-column justify-content-center align-items-center pl-2 pr-2 mb-3 shadow">
+                                    <select id="status" class="select-input">
+                                        <option value="Active" class="option">
+                                            guests and rooms
+                                        </option>
+                                        <option value="Inactive" class="option">Dining Room</option>
+                                        <option value="other" class="option">Others</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-2">
+                                <div class="searchContainer d-flex flex-column justify-content-center align-items-center shadow">
+                                    <button class="button">
+                                        <i class="fas fa-search" style="color: #FFFFFF; font-size:25px;"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <div class="ratingContainer">
+                                <h4 class="starHeading">Star Rating</h1>
+                                    <div class="starCotainer">
+                                        <div class="darkStarContainer  d-flex flex-row justify-content-center align-items-center pl-3 pr-3">
+                                            <p class="pt-3 pr-2">3</p>
+                                            <i class="fas fa-star icon"></i>
+                                        </div>
+                                        <div class="darkStarContainer d-flex flex-row justify-content-center align-items-center pl-3 pr-3">
+                                            <p class="pt-3 pr-2">4</p>
+                                            <i class="fas fa-star icon"></i>
+                                        </div>
+                                        <div class="lightStarContainer d-flex flex-row justify-content-center align-items-center pl-3 pr-3">
+                                            <p class="pt-3 pr-2">5</p>
+                                            <i class="fas fa-star icon"></i>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
